@@ -1,0 +1,7 @@
+file art.png
+
+binwalk art.png
+binwalk -e art.png
+
+# directory /word have a file image which have a base64 encoded string in the end ZmxhZ3tQMGxZdEByX0QwX3kwdV9HM3RfSXRfTjB3P30K whihc is the flag
+# flag{P0lYt@r_D0_y0u_G3t_It_N0w?}
