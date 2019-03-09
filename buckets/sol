@@ -1,0 +1,3 @@
+// flag{W0W_S3_BAD_PERMISSIONS}
+
+Since we know the bucket is tamuctf and buckets format is like http://[bucket_name].s3.amazonaws.com/, just paste the following link http://tamuctf.s3.amazonaws.com/ in the url
