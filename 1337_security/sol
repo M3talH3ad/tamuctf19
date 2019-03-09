@@ -1,0 +1,7 @@
+// gigem{th3_T0tp_1s_we4k_w1tH_yoU}
+
+
+Found sql injection in http://,......./messages?id=89.
+Used sqlmap to find sql injection.
+Please read sqlmap -h for help.
+
