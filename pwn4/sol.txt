@@ -1,0 +1,1 @@
+It is command injection. No specail characters are blocked, so we can connecatenate two strings using ';'. So our input is "; cat flag.txt"

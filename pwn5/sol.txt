@@ -1,0 +1,2 @@
+It is command injection. only first 3 character are allowed to be anything except a '/', so we can connecatenate two strings using ';'. So our input is ";sh". Then we get the shell and use "cat flag.txt"
+
